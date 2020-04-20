@@ -1,8 +1,20 @@
 module.exports = {
+  head: [
+    ['link', { rel: 'icon', href: 'branding/favicon/64.png' }],
+    ['link', { rel: 'manifest', href: '/manifest.json' }],
+    ['meta', { name: 'theme-color', content: '#383838' }],
+    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
+    ['link', { rel: 'apple-touch-icon', href: 'branding/favicon/192.png' }],
+    ['meta', { name: 'msapplication-TileImage', content: '/icons/msapplication-icon-144x144.png' }],
+    ['meta', { name: 'msapplication-TileColor', content: '#ffffff' }]
+  ],
   title: 'Cloud CNC',
   themeConfig: {
-    repo: 'cloud-cnc/cloud-cnc.github.io',
+    repo: 'cloud-cnc',
     editLinks: true,
+    docsRepo: 'cloud-cnc/cloud-cnc.github.io',
+    docsDir: 'source',
     smoothScroll: true,
     nav: [
       {
@@ -76,6 +88,11 @@ module.exports = {
     '@vuepress/active-header-links',
     '@vuepress/back-to-top',
     '@vuepress/last-updated',
-    '@vuepress/pwa'
+    ['@vuepress/pwa',
+      {
+        serviceWorker: true,
+        updatePopup: true
+      }
+    ]
   ]
 };

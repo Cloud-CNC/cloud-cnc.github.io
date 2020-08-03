@@ -1,0 +1,27 @@
+{
+  "name": "cloud-cnc.github.io",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "vuepress build",
+    "dev": "vuepress dev",
+    "line": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cloud-CNC/cloud-cnc.github.io.git"
+  },
+  "author": "Cloud-CNC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Cloud-CNC/cloud-cnc.github.io/issues"
+  },
+  "homepage": "https://github.com/Cloud-CNC/cloud-cnc.github.io#readme",
+  "devDependencies": {
+    "@vuepress/plugin-active-header-links": "^1.4.1",
+    "@vuepress/plugin-back-to-top": "^1.4.1",
+    "eslint": "^6.8.0",
+    "vuepress": "^1.5.2"
+  },
+  "dependencies": {}
+}

@@ -13,7 +13,7 @@ module.exports = {
     repo: 'cloud-cnc',
     editLinks: true,
     docsRepo: 'cloud-cnc/cloud-cnc.github.io',
-    docsDir: 'source',
+    docsDir: 'src',
     smoothScroll: true,
     nav: [
       {

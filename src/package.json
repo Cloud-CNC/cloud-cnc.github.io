@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "vuepress build",
-    "deploy": "@powershell rm ../docs/ -r && @powershell cp .vuepress/dist/ ../docs -r",
+    "deploy": "npm run build && @powershell rm ../docs/ -r && @powershell cp .vuepress/dist/ ../docs -r",
     "dev": "vuepress dev",
     "line": "eslint ."
   },

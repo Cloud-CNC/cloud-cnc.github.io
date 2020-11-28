@@ -55,7 +55,7 @@ module.exports = {
             '/docs/',
             '/docs/permissions',
             '/docs/http-api',
-            '/docs/websocket-api'
+            '/docs/socket-api'
           ]
         }
       ],

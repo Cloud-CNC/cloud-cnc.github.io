@@ -76,7 +76,7 @@ Machines | GET | /machines/all | N/A | N/A | `{"machines": Machine[]}` | Get all
 Machines | POST | /machines | N/A | `{"controller": String, "name": String, "tags": String, "length": String, "width": String, "height": String}` |  `{"id": String}` | Creates a machine.
 Machines | GET | /machines/:id | `id: String` | `{"machine": {"id": String, "controller": String, "name": String, "tags": String, "length: Number, "width": Number, "height": Number}}` | Public | Gets a machines's information.
 Machines | POST | /machines/:id/command | `id: String` | `{"command": String}` | `{"response": String}` | Sends a *small* command to a machine.
-Machines | POST | /machines/:id/execute | `id: String` | `{"file": String}` | N/A | Start executing the specified file on the specified machine.
+Machines | POST | /machines/:id/execute | `id: String` | `{"file": String}` | `{"response": String}` | Start executing the specified file on the specified machine.
 Machines | PATCH | /machines/:id | `id: String` | `{"controller": String, "name": String, "tags": String, "length": String, "width": String, "height": String}` | N/A | Updates a machine.
 Machines | DELETE | /machines/:id | `id: String` | N/A | N/A | Deletes a machine.
 

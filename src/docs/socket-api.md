@@ -22,8 +22,8 @@ All errors will be JSON encoded and in the following format:
 
 Name | Hops | Body | Description
 --- | --- | --- | ---
-`command` | Frontend ▶ Core ▶ Controller | `{"machine": String, "payload": ArrayBuffer}` | Send some short binary data to a machine (To command it)
+`command` | Frontend ▶ Core ▶ Controller | `{"machine": String, "payload": String}` | Send some short binary data to a machine (To command it)
 `execute` | Frontend ▶ Core | `{"machine": String}` | Start executing a file on a machine (File payload is not sent yet because it's not stored by the frontend)
-`execute` | Core ▶ Controller | `{"machine": String, "payload": ArrayBuffer}` | Start executing a file on a machine (File payload is added by the core)
-`output` | Controller ▶ Core | `{"machine": String, "payload": ArrayBuffer}` | Forward serial output from a machine (Note that this is **always sent**, even if no users are connected)
-`output` | Core ▶ Frontend | `{"machine": String, "payload": ArrayBuffer}` | Forward serial output from a machine (Note that this is **only** forwarded to the frontend if a user is actively commanding a machine)
+`execute` | Core ▶ Controller | `{"machine": String, "payload": String}` | Start executing a file on a machine (File payload is added by the core)
+`output` | Controller ▶ Core | `{"machine": String, "payload": String}` | Forward serial output from a machine (Note that this is **always sent**, even if no users are connected)
+`output` | Core ▶ Frontend | `{"machine": String, "payload": String}` | Forward serial output from a machine (Note that this is **only** forwarded to the frontend if a user is actively commanding a machine)

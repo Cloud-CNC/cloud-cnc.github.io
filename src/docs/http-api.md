@@ -7,7 +7,7 @@ The HTTP API is available at `https://<your domain or ip>/api/`.
 Authentication is solely handled by the sessions API family. Users must authenticate themselves via the login route, afterwhich, they will receive a cookie named `session` containing a cookie managed by the `express-session` middleware. The cookie is then used to authenticate the user on all subsequent requests.
 
 ## Permissions
-Cloud CNC is *currently* designed for 2 types of accounts (`Admin` and `User`). In the future, granular permissions will hopefully be added.
+Cloud CNC is *currently* designed for 2 types of accounts (`Admin` and `User`).
 
 
 ## Response handling
@@ -75,8 +75,6 @@ Controller | DELETE | /controllers/:id | `id: String` | N/A | N/A | Deletes a co
 Machines | GET | /machines/all | N/A | N/A | `{"machines": Machine[]}` | Get all machines.
 Machines | POST | /machines | N/A | `{"controller": String, "name": String, "tags": String, "length": String, "width": String, "height": String}` |  `{"id": String}` | Creates a machine.
 Machines | GET | /machines/:id | `id: String` | `{"machine": {"id": String, "controller": String, "name": String, "tags": String, "length: Number, "width": Number, "height": Number}}` | Public | Gets a machines's information.
-Machines | POST | /machines/:id/command | `id: String` | `{"command": String}` | `{"response": String}` | Sends a *small* command to a machine.
-Machines | POST | /machines/:id/execute | `id: String` | `{"file": String}` | `{"response": String}` | Start executing the specified file on the specified machine.
 Machines | PATCH | /machines/:id | `id: String` | `{"controller": String, "name": String, "tags": String, "length": String, "width": String, "height": String}` | N/A | Updates a machine.
 Machines | DELETE | /machines/:id | `id: String` | N/A | N/A | Deletes a machine.
 

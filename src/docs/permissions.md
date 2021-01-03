@@ -42,5 +42,8 @@ machines:create | ❌ | ✔️ | Create a machine
 machines:get | ✔️ | ✔️ | Get a machine
 machines:command | ✔️ | ✔️ | Send a command to a machine
 machines:execute | ✔️ | ✔️ | Execute a file on a machine
+machines:startOutput | ✔️ | ✔️ | Start streaming output from a machine
+machines:stopOutput | ✔️ | ✔️ | Stop streaming output from a machine
+machines:command | ✔️ | ✔️ | Send a command to a machine
 machines:update | ❌ | ✔️ | Update a machine
 machines:remove | ❌ | ✔️ | Remove a machine

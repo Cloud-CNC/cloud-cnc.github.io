@@ -1,0 +1,13 @@
+//Light theme
+:root {
+  //Brand colors
+  --c-brand: hsl(0, 0%, 10%) !important;
+  --c-brand-light: hsl(0, 0%, 20%) !important;
+}
+
+//Dark theme
+:root.dark {
+  //Brand colors
+  --c-brand: hsl(0, 0%, 90%) !important;
+  --c-brand-light: hsl(0, 0%, 100%) !important;
+}
